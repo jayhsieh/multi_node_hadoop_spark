@@ -1,4 +1,4 @@
-sudo su -c "passwd root; passwd jay_cc_hsieh; passwd ubuntu; sed -i 's/PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config; sed -i 's/PasswordAuthentication.*/PasswordAuthentication yes/' /etc/ssh/sshd_config;"
+#sudo su -c "passwd root; passwd jay_cc_hsieh; passwd ubuntu; sed -i 's/PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config; sed -i 's/PasswordAuthentication.*/PasswordAuthentication yes/' /etc/ssh/sshd_config;"
 sudo apt install default-jdk ssh rsync -y
 #ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa
 cat user_env >> ~/.bashrc
