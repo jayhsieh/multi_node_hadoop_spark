@@ -4,3 +4,5 @@
 35.195.241.150 data3
 35.201.174.157 data4
 130.211.254.111 data5
+
+sudo /etc/init.d/networking restart
