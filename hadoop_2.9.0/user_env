@@ -1,5 +1,5 @@
 
-#Hadoop variables edited by jay 20171218
+#Hadoop(2.9.0) variables edited by jay 20171218
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_HOME=/usr/local/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin
@@ -14,9 +14,13 @@ export JAVA_LIBRARY_PATH=$HADOOP_HOME/lib/native:$JAVA_LIBRARY_PATH
 export PATH=$PATH:$JAVA_HOME/bin
 export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar
 
-#Spark variables edited by jay 20171218
+#Spark(2.2.1) variables edited by jay 20171218
 export SPARK_HOME=/usr/local/spark
 export PATH=$PATH:$SPARK_HOME/bin
+
+#Scala(2.11.6) variables edited by jay 20171219
+export SCALA_HOME=/usr/local/scala
+export PATH=$PATH:$SCALA_HOME/bin
 
 alias python=python3
 alias pip=pip3
