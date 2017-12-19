@@ -16,3 +16,5 @@ import pyspark
 sc=pyspark.SparkContext(master="spark://master:7077")
 sc.master
 
+textFile=sc.textFile("hdfs://master:9000/user/ubuntu/wordcount/input/LICENSE.txt")
+textFile.count()
