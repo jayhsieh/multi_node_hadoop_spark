@@ -1,0 +1,10 @@
+1. run in localhost
+pyspark --master local[*]
+
+2. run pyspark in Hadoop YARN
+HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop pyspark --master yarn --deploy-mode client
+
+3.run pysparh in Spark standalone
+/usr/local/spark/sbin/start-all.sh
+
+pyspark --master spark://master:7077 --num-executors 1 --total-executor-cores 3 --executor-memory 512m
