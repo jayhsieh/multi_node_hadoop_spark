@@ -13,4 +13,6 @@ sudo jupyter-notebook --no-browser --port=8888 --allow-root
 
 #inpy
 import pyspark
-sc=
+sc=pyspark.SparkContext(master="spark://master:7077")
+sc.master
+
