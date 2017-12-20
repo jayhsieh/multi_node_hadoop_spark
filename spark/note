@@ -18,3 +18,13 @@ sc.master
 
 textFile=sc.textFile("hdfs://master:9000/user/ubuntu/wordcount/input/LICENSE.txt")
 textFile.count()
+
+# all web UI
+1. hadoop cluster resource, control by YARN
+http://{master ip}:8088
+
+2. distribution file system (DFS) web UI
+http://{master ip}:50070
+
+3. Spark Master Web UI
+http://{master ip}:8080
