@@ -62,8 +62,7 @@
 # - SPARK_NICENESS      The scheduling priority for daemons. (Default: 0)
 # - SPARK_NO_DAEMONIZE  Run the proposed command in the foreground. It will not output a PID file
 
-export SPARK_MASTER_IP=master
-
+export SPARK_MASTER_HOST=master
 export SPARK_WORKER_CORES=1
 export SPARK_WORKER_MEMORY=1024m
 export SPARK_EXECUTOR_INSTANCES=4
