@@ -11,14 +11,20 @@ pyspark --master spark://master:7077 --num-executors 1 --total-executor-cores 3 
 4.run pyspark in Spark standalone by jupyter-notebook
 sudo jupyter-notebook --no-browser --port=8888 --allow-root
 
-#inpy
+============================================
+#inpy: open jupyter-notebook in the dir: /usr/local/spark/sbin/
 import pyspark
-sc=pyspark.SparkContext(master="spark://master:7077")
+sc=pyspark.SparkContext()
 sc.master
+
+out: u'spark://master:7077'
 
 textFile=sc.textFile("hdfs://master:9000/user/ubuntu/wordcount/input/LICENSE.txt")
 textFile.count()
 
+out: 1975
+
+=============================================
 # all web UI
 1. hadoop cluster resource, control by YARN
 http://{master ip}:8088
